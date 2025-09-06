@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Post Header</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-white">
+
+  <div class="w-[360px] bg-white ">
+    <!-- Header -->
+    <div class="flex items-center justify-between p-3">
+      <div class="flex items-center space-x-3">
+        <div class="p-[2px] bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 rounded-full">
+          <img src="https://i.showdown.space/e01/sky.jpeg" alt="avatar"
+               class="w-10 h-10 rounded-full border-2 border-white">
+        </div>
+        <span class="font-medium text-sm">travel_desh</span>
+      </div>
+      <!-- Kebab menu -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+  <circle cx="12" cy="5" r="2"/>
+  <circle cx="12" cy="12" r="2"/>
+  <circle cx="12" cy="19" r="2"/>
+</svg>
+
+    </div>
+
+    <!-- Post Image -->
+    <div class="relative">
+      <img src="https://i.showdown.space/e01/beach.jpeg" alt="post" class="w-full aspect-square object-cover">
+    </div>
+
+<!-- Action buttons -->
+<div class="relative flex items-center px-3 py-2">
+  <!-- Left button: like -->
+  <div class="flex space-x-3">
+    <img src="https://i.showdown.space/e01/heart.svg" alt="like" class="w-6 h-6 cursor-pointer">
+  </div>
+
+  <!-- Carousel indicators centered -->
+<div class="absolute left-1/2 transform -translate-x-1/2 flex items-center space-x-1">
+    <span class="w-1.5 h-1.5 rounded-full bg-blue-500 flex items-center justify-center"></span>
+  <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+  <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+  <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+  <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+  <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+</div>
+
+
+  <!-- Right button: bookmark -->
+  <div class="ml-auto flex space-x-3">
+    <img src="https://i.showdown.space/e01/bookmark.svg" alt="bookmark" class="w-6 h-6 cursor-pointer">
+  </div>
+</div>
+
+
+    <!-- Likes & Caption -->
+    <div class="px-3 pb-3 text-sm">
+      <p class="font-bold py-2">23,046 likes</p>
+      <p><span class="font-bold py-2">travel_desh</span> enjoying the day at the beach…<span class="text-gray-500">more</span></p>
+      <p class="text-gray-500 mt-1">View all 1,012 comments</p>
+    </div>
+  </div>
+
+</body>
+</html>

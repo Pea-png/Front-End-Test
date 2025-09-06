@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NumPad 3D</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f2f5;
+      font-family: sans-serif;
+    }
+
+    .numpad {
+      display: grid;
+      grid-template-columns: repeat(4, 60px);
+      grid-auto-rows: 60px;
+      gap: 10px;
+      background: #2b2f3a;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    }
+
+    .key {
+      background: #4a4e5a;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      /* 3D Neumorphism shadow */
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.4),
+                  -5px -5px 10px rgba(255,255,255,0.1);
+    }
+
+    /* ปุ่มเมื่อกดลง */
+    .key:active {
+      box-shadow: inset 3px 3px 6px rgba(0,0,0,0.5),
+                  inset -3px -3px 6px rgba(255,255,255,0.1);
+    }
+
+    .key .secondary {
+      position: absolute;
+      bottom: 6px;
+      left: 6px;
+      font-size: 11px;
+      color: #ccc;
+    }
+
+    /* Special sizes */
+    .w2 { grid-column: span 2; }
+    .h2 { grid-row: span 2; }
+  </style>
+</head>
+<body>
+  <div class="numpad">
+    <div class="key">Num<br>Lock <span class="secondary"></span></div>
+    <div class="key">/</div>
+    <div class="key">*</div>
+    <div class="key">-</div>
+
+    <div class="key">7 <span class="secondary">Home</span></div>
+    <div class="key">8 <span class="secondary">↑</span></div>
+    <div class="key">9 <span class="secondary">PgUp</span></div>
+    <div class="key h2">+</div>
+
+    <div class="key">4 <span class="secondary">←</span></div>
+    <div class="key">5</div>
+    <div class="key">6 <span class="secondary">→</span></div>
+
+    <div class="key">1 <span class="secondary">End</span></div>
+    <div class="key">2 <span class="secondary">↓</span></div>
+    <div class="key">3 <span class="secondary">PgDn</span></div>
+    <div class="key h2">Enter</div>
+
+    <div class="key w2">0 <span class="secondary">Ins</span></div>
+    <div class="key">. <span class="secondary">Del</span></div>
+  </div>
+</body>
+</html>
